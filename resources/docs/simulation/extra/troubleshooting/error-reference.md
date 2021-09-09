@@ -26,13 +26,13 @@ You may see a red error message pop up when running a simulation - here's some o
     <tr>
       <td class="text-left">ERROR running simulation: <code>[error]</code> did not match any variant
         of untagged enum OutboundMessage</td>
-      <td class="text-left">All <a href="../../creating-simulations/agent-messages/">messages</a> must
+      <td class="text-left">All <a href="/docs/simulation/creating-simulations/agent-messages/">messages</a> must
         have a <code>to</code> and <code>type</code> field this error indicates the
         type is missing.</td>
     </tr>
     <tr>
       <td class="text-left">D is not a function.</td>
-      <td class="text-left">Check <a href="../../creating-simulations/views/analysis/">analysis</a>.json
+      <td class="text-left">Check <a href="/docs/simulation/creating-simulations/views/analysis/">analysis</a>.json
         - this can indicate you referenced an output that doesn&apos;t exist or
         used an incorrect operation.</td>
     </tr>
@@ -46,5 +46,5 @@ You may see a red error message pop up when running a simulation - here's some o
   </tbody>
 </table>
 
-We're expanding this list with more errors, explanations, and fixes. If you encounter an error that is unclear, [let us know](https://hash.ai/discord).
+We're expanding this list with more errors, explanations, and fixes. If you encounter an error that is unclear, [let us know](/discord).
 
