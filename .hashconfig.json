@@ -1,5 +1,6 @@
 {
   "redirects": {
-    "simulations": "simulation/creating-simulations/agent-based-modeling-basics-1"
+    "simulations": "simulation/creating-simulations/agent-based-modeling-basics-1",
+    "actor-models": "actor-model"
   }
 }
