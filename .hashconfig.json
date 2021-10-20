@@ -1,7 +1,7 @@
 {
   "redirects": {
-    "/docs/simulations": "/docs/simulation/creating-simulations/agent-based-modeling-basics-1",
-    "/glossary/actor-models": "/glossary/actor-model",
-    "/docs/shortcut": "/glossary/dag"
+    "/docs/simulations": "/docs/simulation/creating-simulations/agent-based-modeling-basics-1.md",
+    "/glossary/actor-models": "/glossary/actor-model.mdx",
+    "/docs/shortcut": "/glossary/dag.mdx"
   }
 }
