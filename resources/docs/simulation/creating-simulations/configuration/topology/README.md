@@ -1,6 +1,12 @@
+---
+title: Topology
+slug: simulation/creating-simulations/configuration/topology
+objectId: dceb2b2a-ef0f-4950-9e26-c4ab04f34346
+---
+
 # Topology
 
-An important keyword recognized by the [hEngine](https://hash.ai/platform/engine) is `topology`.
+An important keyword recognized by the [hEngine](/platform/engine) is `topology`.
 
 The topology keyword sits at the top level of the `globals.json` file object and drives a handful of important hardware-accelerated calculations used by behaviors in our simulation.
 
@@ -28,15 +34,15 @@ A topology configuration might look like this:
 
 Configuring topology properly lets you leverage HASH's built-in hardware acceleration to quickly find neighbors in the simulation, define extents of the simulation area, and navigate an agent from point A to B.
 
-{% hint style="success" %}
+<Hint style="success">
 It's best to let HASH do the heavy lifting for you, especially for computationally-intensive work that we've already optimized.
-{% endhint %}
+</Hint>
 
 ## Nearest-neighbor calculations
 
 **Search Radius**
 
-Internally, hEngine maintains a list of neighbors for each agent and updates the list with each time step. As agents move, their list of neighbors automatically updates - agents further away than a given search radius are removed and agents within the search radius are added. In the properties tab, this can be defined via a "search\_radius" keyword:
+Internally, hEngine maintains a list of neighbors for each agent and updates the list with each time step. As agents move, their list of neighbors automatically updates - agents further away than a given search radius are removed and agents within the search radius are added. In the properties tab, this can be defined via a "search_radius" keyword:
 
 ```javascript
 {
@@ -49,8 +55,9 @@ Internally, hEngine maintains a list of neighbors for each agent and updates the
 
 Any agents automatically found within the search radius of a given agent can be accessed through the agent's context. In practice, an example agent behavior would look like:
 
-{% tabs %}
-{% tab title="JavaScript" %}
+<Tabs>
+<Tab title="JavaScript" >
+
 ```javascript
 function behavior(state, context) {
     const neighbors = context.neighbors()
@@ -66,9 +73,11 @@ function behavior(state, context) {
     });
 }
 ```
-{% endtab %}
 
-{% tab title="Python" %}
+</Tab>
+
+<Tab title="Python" >
+
 ```python
 def behavior(state, context):
     neighbors = context.neighbors()
@@ -81,8 +90,9 @@ def behavior(state, context):
     map(lambda n: ..., neighbors)
 }
 ```
-{% endtab %}
-{% endtabs %}
+
+</Tab>
+</Tabs>
 
 In addition to being able to set the search radius for all agents in the simulation, it is possible for the user to override the search radius for individual agents. This can be done dynamically but is typically done in the initial state definition.
 
@@ -99,8 +109,8 @@ In addition to being able to set the search radius for all agents in the simulat
 In addition to setting the search radius, it is also possible to set the distance function that the engine uses to compute the distance between agents. This can only be set in the `globals.json` file. The following pre-built distance functions are supported:
 
 * `manhattan` or `taxicab`: L1 norm distance function that return the grid distance between two points
-* `euclidean`: L2 norm distance function that returns the direct distance between two points 
-* `euclidean_squared`: Similar to euclidean but distances are left squared for performance reasons. 
+* `euclidean`: L2 norm distance function that returns the direct distance between two points
+* `euclidean_squared`: Similar to euclidean but distances are left squared for performance reasons.
 * `chebyshev` or `conway`: L-infinity norm distance function that return the longest distance in **x**, **y**, and **z**
 
 ```javascript
@@ -111,4 +121,3 @@ In addition to setting the search radius, it is also possible to set the distanc
     }
 }
 ```
-

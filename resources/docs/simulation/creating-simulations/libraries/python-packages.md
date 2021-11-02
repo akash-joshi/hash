@@ -1,4 +1,7 @@
 ---
+title: Python
+slug: simulation/creating-simulations/libraries/python-packages
+objectId: cf9de4ff-0f99-45e2-bcfc-b78c3f652745
 description: Python packages and libraries support in HASH
 ---
 
@@ -16,4 +19,3 @@ We run Python3 in the browser through [Pyodide](https://github.com/iodide-projec
 | [NumPy](https://docs.scipy.org/doc/numpy-1.15.4/reference/) | 1.15.4 | Base library for scientific computing in Python |
 | [SciPy](https://docs.scipy.org/doc/scipy-0.17.1/reference/) | 0.17.1 | Optimization, linear algebra, and statistics |
 | [uncertainties](https://pythonhosted.org/uncertainties/index.html) | 3.1.2 | Numbers with uncertainties |
-

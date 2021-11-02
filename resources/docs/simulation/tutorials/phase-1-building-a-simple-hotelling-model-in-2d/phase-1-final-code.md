@@ -1,9 +1,16 @@
+---
+title: Final Code
+slug: simulation/tutorials/phase-1-building-a-simple-hotelling-model-in-2d/phase-1-final-code
+objectId: f7ea6fbf-e228-4bf8-afef-833b83861317
+---
+
 # Final Code
 
-Check out the model \(Local Competition Phase 1\) in [hIndex](https://hash.ai/@hash/local-competition-phase-1)
+Check out the model \(Local Competition Phase 1\) in [hIndex](/@hash/local-competition-phase-1)
 
-{% tabs %}
-{% tab title="init.json" %}
+<Tabs>
+<Tab title="init.json" >
+
 ```text
 [
  {
@@ -47,9 +54,11 @@ Check out the model \(Local Competition Phase 1\) in [hIndex](https://hash.ai/@h
  }
 ]
 ```
-{% endtab %}
 
-{% tab title="globals.json" %}
+</Tab>
+
+<Tab title="globals.json" >
+
 ```text
 {
  "topology": {
@@ -65,9 +74,11 @@ Check out the model \(Local Competition Phase 1\) in [hIndex](https://hash.ai/@h
  }
 }
 ```
-{% endtab %}
 
-{% tab title="update\_businesses.js" %}
+</Tab>
+
+<Tab title="update_businesses.js" >
+
 ```javascript
 const behavior = (state, context) => {
  state.agents["businesses"].map((b) => {
@@ -75,9 +86,11 @@ const behavior = (state, context) => {
  })
 }
 ```
-{% endtab %}
 
-{% tab title="business.js" %}
+</Tab>
+
+<Tab title="business.js" >
+
 ```javascript
 const behavior = (state, context) => {
  const send_message = (agent_id, position, price) => {
@@ -155,9 +168,11 @@ const behavior = (state, context) => {
  }
 }
 ```
-{% endtab %}
 
-{% tab title="customer.js" %}
+</Tab>
+
+<Tab title="customer.js" >
+
 ```javascript
 const behavior = (state, context) => {
  // Function to determine cost --> business price + distance from business
@@ -256,6 +271,6 @@ const behavior = (state, context) => {
  find_min(businesses);
 }
 ```
-{% endtab %}
-{% endtabs %}
 
+</Tab>
+</Tabs>

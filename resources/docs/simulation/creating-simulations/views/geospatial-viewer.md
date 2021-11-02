@@ -1,8 +1,14 @@
+---
+title: Geospatial
+slug: simulation/creating-simulations/views/geospatial-viewer
+objectId: 5c60988f-abb9-4eff-bded-fb8616dc7d93
+---
+
 # Geospatial
 
-The geospatial viewer provides a realtime view of a simulation running inside any geographic area — a neighborhood, a city, a country, or the whole world. It's great for visualizing simulations in which agents occupy a position on a map. Take a look at the [City Infection Model](https://hash.ai/@hash/city-infection-model-with-vaccine) for an example simulation using the geospatial viewer.
+The geospatial viewer provides a realtime view of a simulation running inside any geographic area — a neighborhood, a city, a country, or the whole world. It's great for visualizing simulations in which agents occupy a position on a map. Take a look at the [City Infection Model](/@hash/city-infection-model-with-vaccine) for an example simulation using the geospatial viewer.
 
-![](../../.gitbook/assets/geospatial-viewer.png)
+![](https://cdn-us1.hash.ai/site/docs/geospatial-viewer.png)
 
 ## Points
 
@@ -30,4 +36,3 @@ You can change these fields at any time during the simulation, and the agent wil
 ## Areas and other shapes
 
 Currently, HASH only supports drawing points in the geospatial viewer. We plan to add further capabilities soon, including support for drawing polygons.
-

@@ -1,4 +1,7 @@
 ---
+title: Programmable Initialization
+slug: simulation/creating-simulations/anatomy-of-an-agent/programmable-initial-states
+objectId: 13e5ee9e-1c0e-4ffe-be93-739606ed9af6
 description: Initializing simulations with JavaScript and Python
 ---
 
@@ -6,14 +9,13 @@ description: Initializing simulations with JavaScript and Python
 
 By default, all new simulation projects in HASH start with an `init.json` file for specifying the initial state. If desired, you can convert this `init.json` file to Python `init.py`, or Javascript `init.js` by right-clicking on the init file and choosing your desired conversion.
 
-![](https://github.com/hashintel/docs/tree/aaaa311cf4199a69fb5c434713734e735ebc19fc/creating-simulations/.gitbook/assets/convert-init.png)
-
 Python and Javascript init files provide access to the simulation globals and data, and are useful for dynamically initializing a simulation. When using `init.js` or `init.py`, you typically won't need to use creator agents.
 
 Both Javascript and Python init files must contain a function called `init` which returns a list of agents. The `init` function takes a single argument called `context` which provides access to the simulation `globals` and `data`.
 
-{% tabs %}
-{% tab title="JavaScript" %}
+<Tabs>
+<Tab title="JavaScript" >
+
 ```javascript
 /**
  * @param {InitContext} initialization context
@@ -36,9 +38,11 @@ const init = (context) => {
   return agents;
 }
 ```
-{% endtab %}
 
-{% tab title="Python" %}
+</Tab>
+
+<Tab title="Python" >
+
 ```python
 import statistics
 import random
@@ -60,6 +64,6 @@ def init(context):
 
   return agents
 ```
-{% endtab %}
-{% endtabs %}
 
+</Tab>
+</Tabs>

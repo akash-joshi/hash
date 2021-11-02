@@ -1,6 +1,12 @@
+---
+title: Agent
+slug: simulation/creating-simulations/libraries/hash/agent
+objectId: 34c98a57-c201-48ef-bb76-5abcd714fea9
+---
+
 # Agent
 
-## generateAgentID\(\)
+## generateAgentID()
 
 Function that returns a valid UUID address that can be set as the agent ID. In particular it's useful for adding a unique identifier to an agent that will then be used to message that agent.
 
@@ -25,4 +31,3 @@ function behavior(state, context) {
     state.addMessage("hash", "create_agent", parent_agent)
 }
 ```
-

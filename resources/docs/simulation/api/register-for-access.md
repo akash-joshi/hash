@@ -1,4 +1,7 @@
 ---
+title: Register for Access
+slug: simulation/api/register-for-access
+objectId: f0423ea5-4609-4a26-a40c-e03b1230684b
 description: Register for beta access
 ---
 
@@ -17,4 +20,3 @@ The **hCloud API** provides access to the results of simulation and experiment r
 ## hIndex API
 
 The **hIndex API** enables data and other projects contained within hIndex to be accessed and updated externally.
-

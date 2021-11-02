@@ -1,3 +1,9 @@
+---
+title: Process Model Concepts
+slug: simulation/tutorials/building-process-models/process-model-concepts
+objectId: 9f6ec0b6-c84e-4ab7-9e36-a0d843a32e3e
+---
+
 # Process Model Concepts
 
 Process modeling is designing a process as a series of discrete, executable steps, and then optimizing and analyzing the design.
@@ -10,7 +16,7 @@ You can think of it like a flowchart - objects start at the source, travel throu
 
 When designing your own process models, your primary task is to factor the real world process into discrete steps, and then match those steps to elements in the process library \(or build your own!\)
 
-### Elements
+## Elements
 
 With the HASH process library, we provide ready made behaviors for implementing process models. Each corresponds with a common element for process models.
 
@@ -22,11 +28,11 @@ With the HASH process library, we provide ready made behaviors for implementing 
 * Select Output: Routes an object to a specific behavior depending on the state of the output or a conditional check.
 * Sink: Accepts objects and removes them from the process model.
 
-{% hint style="info" %}
-The full list of process blocks and their parameters are listed in [Process Blocks](../../concepts/designing-with-process-models/process-blocks.md).
-{% endhint %}
+<Hint style="info">
+The full list of process blocks and their parameters are listed in [Process Blocks](/docs/simulation/concepts/designing-with-process-models/process-blocks).
+</Hint>
 
-Each of these elements has a built-in-queue, and will move objects in its queue to the next process model in line. See [Designing with Process Models](../../concepts/designing-with-process-models/custom-behaviors.md) for more on the implementation. Additionally, you can add your own elements to [perform custom logic](../../concepts/designing-with-process-models/custom-behaviors.md). Create a new behavior, or fork the custom behavior, and add in your own code.
+Each of these elements has a built-in-queue, and will move objects in its queue to the next process model in line. See [Designing with Process Models](/docs/simulation/concepts/designing-with-process-models/custom-behaviors) for more on the implementation. Additionally, you can add your own elements to [perform custom logic](/docs/simulation/concepts/designing-with-process-models/custom-behaviors). Create a new behavior, or fork the custom behavior, and add in your own code.
 
 ```javascript
 // Forked custom_process_template.js to add a behavior
@@ -61,6 +67,3 @@ const behavior = (state, context) => {
 };
 
 ```
-
-
-

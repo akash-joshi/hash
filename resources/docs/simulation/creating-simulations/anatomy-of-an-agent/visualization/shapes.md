@@ -1,3 +1,9 @@
+---
+title: Shapes
+slug: simulation/creating-simulations/anatomy-of-an-agent/visualization/shapes
+objectId: 1f39e725-319c-42a3-805d-223e63e872fd
+---
+
 # Shapes
 
 ## Geometric Shapes
@@ -68,7 +74,6 @@ HASH also allows you to use 3D mesh models. Use any of these keyword strings in 
 * bamboo
 * fire
 
-{% hint style="info" %}
+<Hint style="info">
 **Looking for a 3D model that isn't yet supported in HASH?** [Fill in this form](https://sohostrategy.typeform.com/to/O9ME5RrG)
-{% endhint %}
-
+</Hint>

@@ -1,4 +1,7 @@
 ---
+title: Distance Functions
+slug: simulation/creating-simulations/configuration/topology/distance-functions
+objectId: f34a19b1-0bd7-44dc-97e0-c371d63ab6c0
 description: How far away is one agent from another?
 ---
 
@@ -27,9 +30,8 @@ When finding the neighbors of agents in a simulation, HASH depends on a few impo
 | `euclidean` | The point-point distance "as the crow flies" between two points [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_distance) |
 | `euclidean_squared` | Same as euclidean, but the final square root is not taken. This is useful when for high-performance distance calculations when only order matters. [Wikipedia](https://en.wikipedia.org/wiki/Euclidean_distance#Squared_Euclidean_distance) |
 
-{% hint style="info" %}
+<Hint style="info">
 The default distance function is `conway` - make sure to change it depending on your use case!
-{% endhint %}
+</Hint>
 
 Currently, HASH doesn't support multiple distance functions in a single simulation.
-

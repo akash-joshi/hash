@@ -1,11 +1,18 @@
+---
+title: Plots Syntax Reference
+slug: simulation/creating-simulations/views/analysis/plots-syntax-reference
+objectId: 563b072a-2228-451d-a731-8c0e6c0d5f02
+---
+
 # Plots Syntax Reference
 
 ## Histograms
 
 **Vertical histogram**
 
-{% tabs %}
-{% tab title="Code" %}
+<Tabs>
+<Tab title="Code" >
+
 ```javascript
 {
   "title": "My histogram",
@@ -15,17 +22,20 @@
   "position": {"x": "0%", "y": "0%"}
 }
 ```
-{% endtab %}
 
-{% tab title="Modal configuration" %}
-![](../../../.gitbook/assets/screenshot-2021-03-11-at-18.27.36.png)
-{% endtab %}
-{% endtabs %}
+</Tab>
+
+<TextTab title="Modal configuration" >
+
+![](https://cdn-us1.hash.ai/site/docs/screenshot-2021-03-11-at-18.27.36.png)
+</TextTab>
+</Tabs>
 
 **Horizontal histogram**
 
-{% tabs %}
-{% tab title="Code" %}
+<Tabs>
+<Tab title="Code" >
+
 ```javascript
 {
   "title": "My horizontal histogram",
@@ -35,17 +45,20 @@
   "position": {"x": "0%", "y": "0%"}
 }
 ```
-{% endtab %}
 
-{% tab title="Modal configuration" %}
-![](../../../.gitbook/assets/screenshot-2021-03-11-at-18.30.43.png)
-{% endtab %}
-{% endtabs %}
+</Tab>
+
+<TextTab title="Modal configuration" >
+
+![](https://cdn-us1.hash.ai/site/docs/screenshot-2021-03-11-at-18.30.43.png)
+</TextTab>
+</Tabs>
 
 **Two histograms on the same plot**
 
-{% tabs %}
-{% tab title="Code" %}
+<Tabs>
+<Tab title="Code" >
+
 ```javascript
 {
   "title": "Two histograms on the same plot",
@@ -55,17 +68,20 @@
   "position": {"x": "0%", "y": "0%"}
 }
 ```
-{% endtab %}
 
-{% tab title="Modal configuration" %}
-![](../../../.gitbook/assets/screenshot-2021-03-11-at-18.36.34.png)
-{% endtab %}
-{% endtabs %}
+</Tab>
+
+<TextTab title="Modal configuration" >
+
+![](https://cdn-us1.hash.ai/site/docs/screenshot-2021-03-11-at-18.36.34.png)
+</TextTab>
+</Tabs>
 
 **Two horizontal histograms on the same plot**
 
-{% tabs %}
-{% tab title="Code" %}
+<Tabs>
+<Tab title="Code" >
+
 ```javascript
 {
   "title": "Two horizontal histograms on the same plot",
@@ -78,19 +94,22 @@
   "position": {"x": "0%", "y": "150%"}
 }
 ```
-{% endtab %}
 
-{% tab title="Modal configuration" %}
-![](../../../.gitbook/assets/screenshot-2021-03-11-at-18.37.23.png)
-{% endtab %}
-{% endtabs %}
+</Tab>
+
+<TextTab title="Modal configuration" >
+
+![](https://cdn-us1.hash.ai/site/docs/screenshot-2021-03-11-at-18.37.23.png)
+</TextTab>
+</Tabs>
 
 ## Area
 
 **Multiple metrics**
 
-{% tabs %}
-{% tab title="Code" %}
+<Tabs>
+<Tab title="Code" >
+
 ```javascript
 {
   "title": "Infection Progress",
@@ -106,19 +125,22 @@
   "position": {"x": "0%", "y": "0%"}
 }
 ```
-{% endtab %}
 
-{% tab title="Modal configuration" %}
-![](../../../.gitbook/assets/screenshot-2021-03-11-at-17.53.05.png)
-{% endtab %}
-{% endtabs %}
+</Tab>
+
+<TextTab title="Modal configuration" >
+
+![](https://cdn-us1.hash.ai/site/docs/screenshot-2021-03-11-at-17.53.05.png)
+</TextTab>
+</Tabs>
 
 ## Box
 
 **Two box plots example**
 
-{% tabs %}
-{% tab title="Code" %}
+<Tabs>
+<Tab title="Code" >
+
 ```javascript
 {
     "title": "Two box plots example",
@@ -140,19 +162,22 @@
     ]
 }
 ```
-{% endtab %}
 
-{% tab title="Modal configuration" %}
-![](../../../.gitbook/assets/screenshot-2021-03-11-at-18.25.23.png)
-{% endtab %}
-{% endtabs %}
+</Tab>
+
+<TextTab title="Modal configuration" >
+
+![](https://cdn-us1.hash.ai/site/docs/screenshot-2021-03-11-at-18.25.23.png)
+</TextTab>
+</Tabs>
 
 ## Line
 
 **Two time-series in the same plot**
 
-{% tabs %}
-{% tab title="Code" %}
+<Tabs>
+<Tab title="Code" >
+
 ```javascript
 {
     "title": "Two timeseries example",
@@ -174,19 +199,22 @@
     }]
 }
 ```
-{% endtab %}
 
-{% tab title="Modal configuration" %}
-![](../../../.gitbook/assets/screenshot-2021-03-11-at-15.27.25.png)
-{% endtab %}
-{% endtabs %}
+</Tab>
+
+<TextTab title="Modal configuration" >
+
+![](https://cdn-us1.hash.ai/site/docs/screenshot-2021-03-11-at-15.27.25.png)
+</TextTab>
+</Tabs>
 
 ## Scatter
 
-### **Two time-series in the same plot**
+### Two time-series in the same plot
 
-{% tabs %}
-{% tab title="Code" %}
+<Tabs>
+<Tab title="Code" >
+
 ```javascript
 {
     "title": "Two timeseries example",
@@ -208,10 +236,11 @@
     }]
 }
 ```
-{% endtab %}
 
-{% tab title="Modal configuration" %}
-![](../../../.gitbook/assets/screenshot-2021-03-11-at-15.15.03.png)
-{% endtab %}
-{% endtabs %}
+</Tab>
 
+<TextTab title="Modal configuration" >
+
+![](https://cdn-us1.hash.ai/site/docs/screenshot-2021-03-11-at-15.15.03.png)
+</TextTab>
+</Tabs>

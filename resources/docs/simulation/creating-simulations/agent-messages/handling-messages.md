@@ -1,3 +1,9 @@
+---
+title: Handling Messages
+slug: simulation/creating-simulations/agent-messages/handling-messages
+objectId: 115d9a68-381f-4b08-8765-4a17be0a1afe
+---
+
 # Handling Messages
 
 **What happens when an agent receives a message?**
@@ -24,14 +30,15 @@ It's best to think of the `messages` field like a mailbox.
 
 Notice the distinction. Context is immutable and any accidental changes made to it will not propagate.
 
-{% hint style="info" %}
+<Hint style="info">
 Send messages with `state.messages`and receive them with `context.messages()`.
-{% endhint %}
+</Hint>
 
 Handling the messages here would be pretty simple - just iterating through the messages array in context.
 
-{% tabs %}
-{% tab title="JavaScript" %}
+<Tabs>
+<Tab title="JavaScript" >
+
 ```javascript
 const behavior = (state, context) => {
     for (const message in context.messages()) {
@@ -45,17 +52,21 @@ const behavior = (state, context) => {
     })
 }
 ```
-{% endtab %}
 
-{% tab title="Python" %}
+</Tab>
+
+<Tab title="Python" >
+
 ```python
 def behavior(state, context):
     for message in context.messages():
         ...
 ```
-{% endtab %}
 
-{% tab title="Rust" %}
+</Tab>
+
+<Tab title="Rust" >
+
 ```rust
 fn (state: AgentState, context: &Context) -> AgentState {
     context.messages()
@@ -63,11 +74,13 @@ fn (state: AgentState, context: &Context) -> AgentState {
            .map(|m: &Message| {...});
 }
 ```
-{% endtab %}
-{% endtabs %}
 
-{% tabs %}
-{% tab title="JavaScript" %}
+</Tab>
+</Tabs>
+
+<Tabs>
+<Tab title="JavaScript" >
+
 ```javascript
 const behavior = (state, context) => {
     for (const message of context.messages()) {
@@ -81,16 +94,18 @@ const behavior = (state, context) => {
     })
 }
 ```
-{% endtab %}
 
-{% tab title="Python" %}
+</Tab>
+
+<Tab title="Python" >
+
 ```python
 def behavior(state, context):
     for message in context.messages():
         ...
 ```
-{% endtab %}
-{% endtabs %}
+
+</Tab>
+</Tabs>
 
 The messages that an agent receives are only available on the timestep they received them. `context.messages()` is cleared between timesteps, so an agent will need to store the messages on their state if they want to preserve a message.
-
