@@ -54,7 +54,6 @@ Check out the model \(Local Competition Phase 1\) in [hIndex](/@hash/local-compe
  }
 ]
 ```
-
 </Tab>
 
 <Tab title="globals.json" >
@@ -74,7 +73,6 @@ Check out the model \(Local Competition Phase 1\) in [hIndex](/@hash/local-compe
  }
 }
 ```
-
 </Tab>
 
 <Tab title="update_businesses.js" >
@@ -86,7 +84,6 @@ const behavior = (state, context) => {
  })
 }
 ```
-
 </Tab>
 
 <Tab title="business.js" >
@@ -168,7 +165,6 @@ const behavior = (state, context) => {
  }
 }
 ```
-
 </Tab>
 
 <Tab title="customer.js" >
@@ -271,6 +267,6 @@ const behavior = (state, context) => {
  find_min(businesses);
 }
 ```
-
 </Tab>
 </Tabs>
+

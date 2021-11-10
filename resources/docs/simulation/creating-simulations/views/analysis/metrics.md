@@ -93,3 +93,4 @@ It's likely that the most common operation you'll use is "filter". You can filte
 | lte | Less than or equal to \(&lt;=\) |
 | gt | Greater than \(&gt;\) |
 | gte | Greater than or equal to \(&gt;=\) |
+

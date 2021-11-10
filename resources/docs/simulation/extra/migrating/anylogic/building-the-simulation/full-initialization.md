@@ -35,6 +35,7 @@ for loc in pipelines['nodes']:
         # Create Retailers
 ```
 
+
 Our creator function will parse the dataset and assign the necessary properties and behaviors to every agent. An upcoming version of HASH will include a click-through wizard that will do this on your behalf.
 
 ## Initializing from Historical Data
@@ -74,3 +75,5 @@ const behavior = (state, context) => {
   state.set("yearly_supply", yearly_supply);
 };
 ```
+
+

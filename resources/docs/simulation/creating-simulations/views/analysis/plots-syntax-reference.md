@@ -13,6 +13,7 @@ objectId: 563b072a-2228-451d-a731-8c0e6c0d5f02
 <Tabs>
 <Tab title="Code" >
 
+  
 ```javascript
 {
   "title": "My histogram",
@@ -22,7 +23,6 @@ objectId: 563b072a-2228-451d-a731-8c0e6c0d5f02
   "position": {"x": "0%", "y": "0%"}
 }
 ```
-
 </Tab>
 
 <TextTab title="Modal configuration" >
@@ -36,6 +36,7 @@ objectId: 563b072a-2228-451d-a731-8c0e6c0d5f02
 <Tabs>
 <Tab title="Code" >
 
+
 ```javascript
 {
   "title": "My horizontal histogram",
@@ -45,7 +46,6 @@ objectId: 563b072a-2228-451d-a731-8c0e6c0d5f02
   "position": {"x": "0%", "y": "0%"}
 }
 ```
-
 </Tab>
 
 <TextTab title="Modal configuration" >
@@ -59,6 +59,7 @@ objectId: 563b072a-2228-451d-a731-8c0e6c0d5f02
 <Tabs>
 <Tab title="Code" >
 
+
 ```javascript
 {
   "title": "Two histograms on the same plot",
@@ -68,7 +69,6 @@ objectId: 563b072a-2228-451d-a731-8c0e6c0d5f02
   "position": {"x": "0%", "y": "0%"}
 }
 ```
-
 </Tab>
 
 <TextTab title="Modal configuration" >
@@ -82,6 +82,7 @@ objectId: 563b072a-2228-451d-a731-8c0e6c0d5f02
 <Tabs>
 <Tab title="Code" >
 
+
 ```javascript
 {
   "title": "Two horizontal histograms on the same plot",
@@ -94,7 +95,6 @@ objectId: 563b072a-2228-451d-a731-8c0e6c0d5f02
   "position": {"x": "0%", "y": "150%"}
 }
 ```
-
 </Tab>
 
 <TextTab title="Modal configuration" >
@@ -109,6 +109,7 @@ objectId: 563b072a-2228-451d-a731-8c0e6c0d5f02
 
 <Tabs>
 <Tab title="Code" >
+
 
 ```javascript
 {
@@ -125,7 +126,6 @@ objectId: 563b072a-2228-451d-a731-8c0e6c0d5f02
   "position": {"x": "0%", "y": "0%"}
 }
 ```
-
 </Tab>
 
 <TextTab title="Modal configuration" >
@@ -162,7 +162,6 @@ objectId: 563b072a-2228-451d-a731-8c0e6c0d5f02
     ]
 }
 ```
-
 </Tab>
 
 <TextTab title="Modal configuration" >
@@ -199,7 +198,6 @@ objectId: 563b072a-2228-451d-a731-8c0e6c0d5f02
     }]
 }
 ```
-
 </Tab>
 
 <TextTab title="Modal configuration" >
@@ -236,7 +234,6 @@ objectId: 563b072a-2228-451d-a731-8c0e6c0d5f02
     }]
 }
 ```
-
 </Tab>
 
 <TextTab title="Modal configuration" >
@@ -244,3 +241,4 @@ objectId: 563b072a-2228-451d-a731-8c0e6c0d5f02
 ![](https://cdn-us1.hash.ai/site/docs/screenshot-2021-03-11-at-15.15.03.png)
 </TextTab>
 </Tabs>
+

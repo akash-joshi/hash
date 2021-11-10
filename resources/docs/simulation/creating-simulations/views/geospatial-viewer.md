@@ -36,3 +36,4 @@ You can change these fields at any time during the simulation, and the agent wil
 ## Areas and other shapes
 
 Currently, HASH only supports drawing points in the geospatial viewer. We plan to add further capabilities soon, including support for drawing polygons.
+

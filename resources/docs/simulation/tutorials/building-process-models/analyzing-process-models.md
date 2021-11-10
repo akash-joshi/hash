@@ -47,7 +47,6 @@ Each Service, Seize, or Release block in your process model has an associated re
   "max_resources": 5
 }
 ```
-
 </Tab>
 
 <Tab title="Seize Block" >
@@ -58,7 +57,6 @@ Each Service, Seize, or Release block in your process model has an associated re
   "track_wait": true
  }
 ```
-
 </Tab>
 
 <Tab title="Release Block" >
@@ -69,7 +67,6 @@ Each Service, Seize, or Release block in your process model has an associated re
   "max_resources": 8
 }
 ```
-
 </Tab>
 </Tabs>
 

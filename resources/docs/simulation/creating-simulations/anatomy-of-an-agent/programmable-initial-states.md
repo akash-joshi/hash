@@ -38,7 +38,6 @@ const init = (context) => {
   return agents;
 }
 ```
-
 </Tab>
 
 <Tab title="Python" >
@@ -64,6 +63,6 @@ def init(context):
 
   return agents
 ```
-
 </Tab>
 </Tabs>
+

@@ -23,7 +23,7 @@ In `init.json` you'll explicitly define all your agents as JSON blobs in an arra
 
 You can create whatever field names you need on your agents, but be aware of setting incorrect value types on protected fields we mentioned previously.
 
-**init.json**
+** init.json **
 
 ```text
 [
@@ -53,6 +53,7 @@ Now you can write JavaScript or Python in the file and use it to set agent prope
 <Tabs>
 <Tab title="JavaScript" >
 
+
 ```javascript
 const init = (context) => {
   let agents = [
@@ -71,6 +72,7 @@ const init = (context) => {
 </Tab>
 
 <Tab title="Python" >
+
 
 ```python
 import random
@@ -100,6 +102,7 @@ To programmatically create agents, you can add loops and similar logic to append
 <Tabs>
 <Tab title="JavaScript" >
 
+
 ```javascript
 const init = (context) => {
   let agents = [];
@@ -116,6 +119,7 @@ const init = (context) => {
 
 <Tab title="Python" >
 
+
 ```python
 def init(context):
     return [{ "position": [i,i] } for i in range(0,100)]
@@ -128,6 +132,7 @@ Within an `init.js` or `init.py` file you have access to the [context](/docs/sim
 
 <Tabs>
 <Tab title="JavaScript" >
+
 
 ```javascript
 /**
@@ -155,6 +160,7 @@ const init = (context) => {
 </Tab>
 
 <Tab title="Python" >
+
 
 ```python
 import statistics
@@ -241,6 +247,7 @@ You can create new agents during your simulation by sending a message to the res
 <Tabs>
 <Tab title="JavaScript" >
 
+
 ```javascript
 state.addMessage("hash", "create_agent", {
   ...agent_details,
@@ -250,6 +257,7 @@ state.addMessage("hash", "create_agent", {
 </Tab>
 
 <Tab title="Python" >
+
 
 ```python
 state.add_message("hash", "create_agent", {
@@ -267,3 +275,4 @@ If you'd like to explore another simple example that uses these published behavi
 If you ever feel like you might be "reinventing the wheel," check out [hIndex](/search?contentType=Behavior&sort=relevance&query=create&page=1). There you'll find hundreds of pre-made, ready-to-use simulation components.
 
 </Hint>
+

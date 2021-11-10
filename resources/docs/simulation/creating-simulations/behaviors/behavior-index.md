@@ -11,6 +11,7 @@ Sometimes behaviors may need to know which behaviors executed before it, and whi
 <Tabs>
 <Tab title="JavaScript" >
 
+
 ```javascript
 const behavior = (state, context) => {
     const index = state.behaviorIndex();
@@ -18,10 +19,10 @@ const behavior = (state, context) => {
     console.log("behavior name =", state.behaviors[index]);
 }
 ```
-
 </Tab>
 
 <Tab title="Python" >
+
 
 ```python
 def behavior(state, context):
@@ -29,7 +30,6 @@ def behavior(state, context):
     print("behavior index =", index)
     print("behavior name =", state.behaviors[index])
 ```
-
 </Tab>
 </Tabs>
 
@@ -52,3 +52,4 @@ function behavior(state, context) {
   state.height = 3;
 };
 ```
+

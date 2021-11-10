@@ -39,6 +39,7 @@ This behavior takes in the current state and [context](/docs/simulation/creating
 <Tabs>
 <Tab title="JavaScript" >
 
+
 ```javascript
 const behavior = (state, context) => {
   state.age += 1;
@@ -48,6 +49,7 @@ const behavior = (state, context) => {
 </Tab>
 
 <Tab title="Python" >
+
 
 ```python
 def behavior(state, context):
@@ -132,6 +134,7 @@ Additionally, we provide helper methods for **getting** and **setting** a proper
 <Tabs>
 <Tab title="JavaScript" >
 
+
 ```javascript
 let foo = state.get("field_name")
 state.set("field_name", "value")
@@ -140,6 +143,7 @@ state.set("field_name", "value")
 </Tab>
 
 <Tab title="Python" >
+
 
 ```python
 foo = state.get("field_name")

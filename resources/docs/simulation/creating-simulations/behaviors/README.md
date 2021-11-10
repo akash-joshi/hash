@@ -33,6 +33,7 @@ Most behaviors output a single state with the same `agent_id` as they received. 
 <Tabs>
 <Tab title="JavaScript" >
 
+
 ```javascript
 const behavior = (state, context) => {
     state.position[0] += 1;
@@ -42,6 +43,7 @@ const behavior = (state, context) => {
 </Tab >
 
 <Tab title="Python" >
+
 
 ```python
 def behavior(state, context):

@@ -41,7 +41,6 @@ const init = (context) => {
   return agents;
 }
 ```
-
 </Tab>
 
 <Tab title="globals.json" >
@@ -54,7 +53,6 @@ const init = (context) => {
   }
 }
 ```
-
 </Tab>
 </Tabs>
 
@@ -119,7 +117,6 @@ const init = (context) => {
   return agents;
 }
 ```
-
 </Tab>
 
 <Tab title="globals.json" >
@@ -132,7 +129,6 @@ const init = (context) => {
   }
 }
 ```
-
 </Tab>
 </Tabs>
 
@@ -171,7 +167,6 @@ const init = (context) => {
     return agents;
 }
 ```
-
 </Tab>
 
 <Tab title="layout_data.csv" >
@@ -184,6 +179,6 @@ w,w,w,c,w,w
 w,,,,,
 w,,f,,,
 ```
-
 </Tab>
 </Tabs>
+
